@@ -1,0 +1,434 @@
+/*****************/
+/* Header        */
+/*****************/
+#header { 
+	background-color:#8D4E6B; 
+	border: 8px #5E0531 solid; 
+	padding:0px; 
+	margin-top:20px; 
+}
+#header_title { 
+	color:black; 
+	font-weight:bold; 
+	font-size:25px; 
+	height:100%; 
+	vertical-align:text-bottom; 
+	margin-left:0px; 
+}
+#menu { 
+	margin-top:10px; 
+	font-size:15px; 
+}
+#menu li { 
+	float:left; 
+	list-style-image:url('../img/aeg_patrocinadors/quadrat_bct.gif'); 
+}
+#menu A:link { 
+	color:white;
+	font-weight:bold; 
+	text-decoration:none; 
+}
+#menu A:visited { 
+	color:white;
+}
+#menu A:active { 
+
+}
+#menu A:hover { 
+	text-decoration: underline overline; 
+}
+
+
+/*****************/
+/* Body-General  */
+/*****************/
+
+/* Images PopUp */
+#popUpDiv {
+position:absolute; 
+background-color:#eeeeee;
+height:600px;
+z-index: 9002;
+overflow:auto;
+}
+#blanket {
+background-color:#111;
+opacity: 0.65;
+filter:alpha(opacity=65);
+position:absolute;
+z-index: 9001;
+top:0px;
+left:0px;
+width:100%;
+overflow:auto;
+height:100%;
+}
+
+/* Lists */
+ul, li {
+	margin: 0 12px;
+}
+
+#body{}
+
+/* Links */
+A:link { color:#5E0531; text-decoration:none; font-weight: bold; }
+A:visited { color:#5E0531; text-decoration:none; font-weight: bold; }
+A:active { color:#5E0531; text-decoration:underline; }
+A:hover { color:#5E0531; text-decoration: underline; }
+a img { border:none; }
+
+/* Tables */
+table{ 
+	border-collapse: collapse; 
+	padding:0px;
+	margin:0px;
+	background: #fff;
+	border-right:0;
+	clear: both;
+	color: #333;
+	width: 100%;
+}
+th {
+	border:0;
+	border-bottom:2px solid #555;
+	text-align: left;
+	padding:4px;
+}
+th a.asc:after {
+	content: '⇣';
+}
+th a.desc:after {
+	content: '⇡';
+}
+table tr td {
+	padding: 3px;
+	border-bottom:1px solid #ddd;
+}
+/* Titles */
+h1, h2, h3, h4 {
+	font-weight: normal;
+	margin-bottom:0.5em;
+}
+h1 {
+	background:#fff;
+	color: #003d4c;
+	font-size: 100%;
+}
+h2 {
+	background:#fff;
+	color: #e32;
+	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
+	font-size: 190%;
+}
+h3 {
+	color: #993;
+	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
+	font-size: 165%;
+}
+h4 {
+	color: #993;
+	font-weight: normal;
+}
+
+/* Forms */
+form { 
+	background-color:#DDDDDD; 
+	padding-top:15px; 
+	padding-bottom:15px; 
+	padding-left:10px; 
+	overflow:auto;
+}
+.submit_image {
+	vertical-align:bottom;
+	margin-left:10px;
+}
+
+/*****************/
+/* Footer        */
+/*****************/
+#footer { border: 4px #5E0531 solid; padding:0px; margin-top:40px; margin-bottom:25px; text-align:center; overflow:auto; }
+
+
+/*****************/
+/* Search Engine */
+/*****************/
+#buscador { margin-top:20px; }
+#buscador input[type=submit] {  font-weight:bold; margin-top:15px; }
+
+#search_result { margin-top:20px; }
+
+.paging_count, .paging_nav{
+	margin-top:10px;
+	margin-bottom:15px;
+}
+
+/***********************/
+/* Motor Search Engine */
+/***********************/
+.submit {
+	text-align:center;
+	vertical-align:bottom;
+}
+.search_fields_advanced {
+	clear:both;
+	padding:3px;
+}
+.search_fields_basic {
+	clear:both;
+	padding:3px;
+}
+.search_labels {
+	float:left;
+	width:90px;
+	font-weight:bold; 
+}
+.search_field_comparition {
+	margin-left:0px; 
+	width:130px; 
+	font-weight:normal; 
+	font-size:13px;
+}
+.search_field_value {
+	margin-left:10px; 
+	width:90px; 
+	font-weight:normal; 
+	font-size:14px;
+}
+.motorid_col {
+	text-align:center;
+	width:110px;
+}
+.piecec_col {
+	width:70px;
+	text-align:center;
+}
+.unityc_col {
+	width:85px;
+	text-align:center;
+}
+.denomination_col {
+	width:240px;
+}
+.serie_col {
+	width:60px;
+	text-align:center;
+}
+.height_col {
+	width:70px;
+	text-align:center;
+}
+.power_col {
+	width:85px;
+	text-align:center;
+}
+.voltage_col {
+	width:75px;
+	text-align:center;
+}
+.shape_col {
+	width:70px;
+	text-align:center;
+}
+.plan_col {
+	text-align:center;
+}
+#motors_result_list div{
+	float:left;
+	border:0px;
+}
+#motors_result_row div{
+	float:none;
+	clear:both;
+}
+#planols_list div{
+	float:left;
+	border:0px;
+}
+#planols_row div{
+	float:none;
+	clear:both;
+}
+
+
+/*****************/
+/* View Motor    */
+/*****************/
+#motor 
+{  
+	margin-top:20px;
+}
+#components 
+{  
+	margin-top:20px;
+}
+#plans
+{  
+	margin-top:20px;
+}
+#plans form { 
+	background-color:#DDDDDD; 
+	padding-top:15px; 
+	padding-bottom:15px; 
+	padding-left:10px; 
+	overflow:auto;
+}
+#plans_list th {
+	text-align:center;
+}
+#plans_list td{
+	text-align:left;
+}
+.PlansList_id {
+	width:100px;
+}
+.PlansList_Code {
+	width:100px;
+}
+.PlansList_Image {
+	width:250px;
+}
+.PlansList_Location {
+	width:250px;
+}
+.PlansList_Actions {
+	width:70px;
+}
+
+#MotorView_Serie {
+	margin-top:10px;
+}
+#MotorView_Serie .serie_previous_text, .serie_id{
+	font-weight:bold;
+}
+
+
+/*****************/
+/* Admin Motor   */
+/*****************/
+.admin_motors_actions {
+	width:73px;
+}
+
+.quick_edit_tbox{
+	text-align:center;
+	width:100%;
+}/*
+.quick_edit_tbox input[type="text"]{
+	width:90%;
+}*/
+
+
+/**********************/
+/* Part Search Engine */
+/**********************/
+#motors_result_list div{
+	float:left;
+	border:0px;
+}
+.motors_result_row div{
+	float:none;
+	clear:both;
+}
+#buscador_parts { margin-top:20px; }
+#buscador_parts input[type=submit] {  font-weight:bold; margin-top:0px; }
+.parts_search_fields_basic {
+	float:left;
+	padding:3px;
+	margin-right:15px;
+}
+.parts_search_labels {
+	float:left;
+	font-weight:bold; 
+}
+.parts_search_submit {
+	float:left;
+	text-align:center;
+}
+#components  .partid_col_th {
+	text-align:center;
+}
+#components .partid_col_td {
+	text-align:left;
+}
+#components .quantity_col {
+	width:50px; 
+	text-align:center;
+}
+#components .unityc_col {
+	width:50px; 
+	text-align:center;
+}
+#components .denomination_col_th {
+	width:350px; 
+	text-align:center;
+}
+#components .denomination_col_td {
+	width:350px; 
+	text-align:left;
+}
+#components .plan_col {
+	width:60px; 
+	text-align:center;
+}
+.part-result_id_col {
+	text-align:center;
+	width:150px; 
+	float:left;
+	padding:0px;
+}
+.part-result_piecec_col {
+	text-align:center;
+	width:75px;
+	float:left;
+	padding:0px;
+}
+.part-result_unityc_col {
+	text-align:center;
+	width:85px;
+	float:left;
+	padding:0px;
+}
+.part-result_denomination_col {
+	text-align:center;
+	width:557px; 
+	float:left;
+	padding:0px;
+}
+.part-admin_motors_actions {
+	text-align:center;
+	width:73px; 
+	float:left;
+	padding:0px;
+}
+.parts_result_row {
+	float:none;
+	clear:both;
+}
+.component_son {
+	margin-left:15px;
+}
+.InTableForm {
+	padding-top:0px; 
+	padding-bottom:0px; 
+	padding-left:0px; 
+}
+
+/**********/
+/* Colors */
+/**********/
+.error { background-color:#FF0000; font-weight:bold; }
+
+.color_0_hard { background-color:#DDDDDD; }
+.color_0_soft { background-color:#999999; }
+.color_2_hard { background-color:#FFCE95; }
+.color_2_soft { background-color:#FFBA6B; }
+.color_4_hard { background-color:#FFF9A4; }
+.color_4_soft { background-color:#FFF66B; }
+.color_6_hard { background-color:#D7FFA4; }
+.color_6_soft { background-color:#BBFD65; }
+.color_8_hard { background-color:#C2FDE0; }
+.color_8_soft { background-color:#65FDB1; }
+
+.row { background-color:#fff; }
+.altrow { background-color:#bbb; }

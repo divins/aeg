@@ -1,0 +1,198 @@
+# Webalizer V2.01-10 Incremental Data - 11/04/2010 15:10:46
+2010 11 4 15 10 46
+327 130 2 22 11 3 240419 171 7 0 0 0
+2 16 90 2 4
+0 0 0 0 0 0 0 0
+29 10 25438 1 6 1 0 0
+60 8 18150 1 23 2 0 0
+238 112 196831 2 142 4 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+90 33 54668 53 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+71 25 35016 37 0 0
+48 32 53098 38 0 0
+13 6 8031 10 0 0
+0 0 0 0 0 0
+16 16 46018 4 0 0
+39 12 29327 9 0 0
+50 6 14261 20 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0
+0
+0
+130
+0
+0
+0
+0
+0
+0
+0
+0
+52
+0
+129
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+16
+0
+0
+0
+0
+0
+# -urls- 
+/
+0 12 0 25397 5 1 0 0
+/usuarios/add
+0 14 0 20936 1 0 0 0
+/roles/view/1
+0 1 0 1648 0 0 0 0
+/img/cake.icon.png
+1 49 0 7544 0 0 0 0
+/users/login
+0 3 0 2833 0 0 0 0
+/Premios/index
+0 1 0 1456 0 0 0 0
+/Premios
+0 1 0 1455 0 0 0 0
+/premios
+0 1 0 1275 0 0 0 0
+/usuarios/acceder
+0 30 0 28378 1 1 0 0
+/roles/add
+0 12 0 11887 0 0 0 0
+/premios/view/1
+0 1 0 1746 0 0 0 0
+/usuarios/initDB
+0 1 0 28 0 0 0 0
+/build_acl
+0 1 0 891 0 0 0 0
+/usuarios/salir
+0 1 0 1480 0 0 0 0
+/roles
+0 11 0 15131 0 0 0 0
+/favicon.ico
+0 9 0 1116 0 0 0 0
+/usuarios
+0 10 0 17983 0 1 0 0
+/img/cake.power.gif
+1 49 0 1608 0 0 0 0
+/roles/build_acl
+0 1 0 3895 0 0 0 0
+/premios/ver_premio/1
+0 1 0 1143 0 0 0 0
+/admin/usuarios/add
+0 1 0 1065 0 0 0 0
+/css/cake.generic.css
+0 49 0 73656 0 0 0 0
+# End Of Table - urls
+# -sites- (monthly)
+95.61.6.144
+0 237 97 185751 6 1288883446
+/usuarios/acceder 0 0
+83.41.245.66
+0 90 33 54668 1 1288856754
+/roles/view/1 0 0
+# End Of Table - sites (monthly)
+# -sites- (daily)
+95.61.6.144
+0 148 79 142163 3 1288883446
+/usuarios/acceder 0 0
+83.41.245.66
+0 90 33 54668 1 1288856754
+/roles/view/1 0 0
+# End Of Table - sites (daily)
+# -referrers- 
+- (Direct Request)
+0 104
+http://ecdn.laguardiaebria.com/css/cake.generic.css
+1 6
+http://ecdn.laguardiaebria.com/roles
+1 41
+http://ecdn.laguardiaebria.com/roles/add
+1 21
+http://ecdn.laguardiaebria.com/
+1 24
+http://ecdn.laguardiaebria.com/usuarios
+1 33
+http://ecdn.laguardiaebria.com/usuarios/add
+1 19
+http://ecdn.laguardiaebria.com/Premios
+1 10
+http://ecdn.laguardiaebria.com/premios
+1 4
+http://ecdn.laguardiaebria.com/usuarios/acceder
+1 59
+http://ecdn.laguardiaebria.com/users/login
+1 6
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.41 Safari/534.7
+0 206
+Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.41 Safari/534.7
+0 90
+Mozilla/5.0 (Windows; U; Windows NT 6.0; ca; rv:1.9.2.10) Gecko/20100914 Firefox/3.6.10
+0 31
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

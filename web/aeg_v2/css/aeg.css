@@ -1,0 +1,20 @@
+#body{}
+A:link { color:#5E0531; text-decoration:none; }
+A:visited { color:#5E0531; text-decoration:none; }
+A:active { color:#5E0531; text-decoration:underline; }
+A:hover { color:#5E0531; text-decoration: underline; }
+
+#header { background-color:#8D4E6B; border: 8px #5E0531 solid; padding:0px; margin-top:20px; }
+#header_title { color:black; font-weight:bold; font-size:25px; height:100%; vertical-align:text-bottom; margin-left:-10px; }
+#menu { margin-top:10px; font-size:15px; }
+#menu li { float:left; list-style-image:url('../img/aeg_patrocinadors/quadrat_bct.gif'); }
+#menu A:link { color:white; text-decoration:none; }
+#menu A:visited { color:white; text-decoration:none; }
+#menu A:active { color:white; text-decoration:none; }
+#menu A:hover { text-decoration: underline overline; }
+
+#main { margin-top:25px; }
+
+#footer { border: 4px #5E0531 solid; padding:0px; margin-top:40px; margin-bottom:25px; text-align:center; overflow:auto; }
+
+#buscador .div_potencia{ float:left; width:60px; font-weight:bold; vertical-align:bottom; font-size:14px; }
