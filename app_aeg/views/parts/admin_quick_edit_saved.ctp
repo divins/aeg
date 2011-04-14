@@ -1,0 +1,10 @@
+	<div class="part-result_id_col <?php echo $color_class; ?>"><?php echo $this->data['Part']['id']; ?>&nbsp;</div>
+	<div class="part-result_piecec_col <?php echo $color_class; ?>"><?php echo $this->data['Part']['clave_pieza']; ?>&nbsp;</div>
+	<div class="part-result_unityc_col <?php echo $color_class; ?>"><?php echo $this->data['Part']['clave_unidad']; ?>&nbsp;</div>
+	<div class="part-result_denomination_col <?php echo $color_class; ?>"><?php echo $this->data['Part']['denominacion']; ?>&nbsp;</div>
+	<div class="part-admin_motors_actions <?php echo $color_class; ?>">
+		<?php echo $ajax->link( $html->image( 'icons/picture.png', array( 'alt' => __( 'Show_Plan', true ), 'title' => __( 'Show_Plan', true ) ) ), array( 'controller' => 'parts', 'action' => 'mostrar_planols', $this->data['Part']['id'] ), array( 'escape'=>false, 'update' => 'popUpDiv', 'after' => "popup('popUpDiv')" ) );?>
+		<?php echo $ajax->link( $html->image( 'icons/page_edit_mini.png', array( 'alt' => __( 'Quick_Edit', true ), 'title' => __( 'Quick_Edit', true ) ) ), array('action' => 'quick_edit', $this->data['Part']['id'], 0, $color_class ), array( 'escape'=>false, 'update' => 'part_'.$this->data['Part']['id']) );//, 'after' => "popup('popUpDiv')" ) );?>
+		<?php echo $this->Html->link( $html->image( 'icons/page_advanced_edit_mini.png', array( 'alt' => __( 'Advanced_Edit', true ), 'title' => __( 'Advanced_Edit', true ) ) ), array('action' => 'edit', $this->data['Part']['id']), array( 'escape'=>false, 'target'=>'blank' ) ); ?>
+		<?php echo $this->Html->link( $html->image( 'icons/cross.png', array( 'alt' => __( 'Delete_Part', true ), 'title' => __( 'Delete_Part', true ) ) ), array('action' => 'delete', $this->data['Part']['id']), array( 'escape'=>false ), sprintf(__('Do_you_really_wanna_delete_part?', true), $this->data['Part']['id'])); ?>
+	</div>
