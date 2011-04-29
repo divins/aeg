@@ -59,7 +59,8 @@ echo $html->script('prototype');
 			(
 				'name' => 'Buscar',
 				'label' => __('Search', true),
-				'div' => false
+				'div' => false,
+				'style' => 'margin-top: 0px'
 			);
 			echo $form->end($button_options);
 			?>
