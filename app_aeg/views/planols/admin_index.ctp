@@ -1,40 +1,70 @@
 <?php
 echo $html->script('CSSPopUp');
 echo $html->script('prototype');
-//echo $html->script('scriptaculous');
 ?>
 
 <div id="buscador" class="grid_16">
-<h2><?php __('Searcher');?></h2>
+	<h2><?php __('Searcher');?></h2>
 	<?php
-	echo $form->create('Planol', array('action' => 'index', "style"=>"background-color:#DDDDDD;"), true);
-		//$options = array(">"=>__('Superior', true), ">="=>__('Superior o Igual', true), "="=>__('Igual', true), "<="=>__('Inferior o Igual', true), "<"=>__('Inferior', true), "-"=>__('Rang', true));
-        
-		$style['type'] = 'text';
-        $style['style'] = 'float:left; width: 90px; font-weight: normal; font-size: 14px;';
-        $style['div']['style'] = 'float: left; width: 150px; font-weight: bold; vertical-align: bottom; font-size: 14px;';
-        $style['label'] = false;
-		
-		echo "<div style='float:left; width:20px; font-weight:bold; vertical-align:bottom; font-size:14px;'>".__("ID",true)."</div>";
-		echo $form->input('id', $style );	
-		echo "<div style='float:left; width:80px; font-weight:bold; vertical-align:bottom; font-size:14px;'>".__("Code",true)."</div>";
-		echo $form->input('codigo', $style );
-		echo "<div style='float:left; width:90px; font-weight:bold; vertical-align:bottom; font-size:14px;'>".__("Digital_Image",true)."</div>";
-		echo $form->input('img_digital', $style );
-		echo "<div style='float:left; width:90px; font-weight:bold; vertical-align:bottom; font-size:14px;'>".__("Location",true)."</div>";
-		echo $form->input('ubicacion', $style );
-		
-	$button_options = array
-	(
-		'name' => 'Buscar',
-		'label' => __('Search', true),
-		'div' => array
-		(
-			'style' => 'text-align:center; font-weight:bold; margin-top:15px;',
-		)
-	);
-	echo $form->end($button_options);
+	echo $form->create('Planol', array('action' => 'index'), true);
+	$style['type'] = 'text';
+	$style['class'] = 'search_field_value';
+	$style['div'] = false;
+	$style['label'] = false;
 	?>
+		<div class="parts_search_fields_basic">
+			<div class="parts_search_labels">
+				<?php
+				echo __("ID",true);
+				?>
+			</div>
+			<?php
+
+			echo $form->input('id', $style);
+			?>
+		</div>
+		<div class="parts_search_fields_basic">
+			<div class="parts_search_labels">
+				<?php
+				echo __("Code",true);
+				?>
+			</div>
+			<?php
+			echo $form->input('codigo', $style);
+			?>
+		</div>
+		<div class="parts_search_fields_basic">
+			<div class="parts_search_labels">
+				<?php
+				echo __("Digital_Image",true);
+				?>
+			</div>
+			<?php
+			echo $form->input('img_digital', $style);
+			?>
+		</div>
+		<div class="parts_search_fields_basic">
+			<div class="parts_search_labels">
+				<?php
+				echo __("Location",true);
+				?>
+			</div>
+			<?php
+			echo $form->input('ubicacion', $style);
+			?>
+		</div>
+		<div class="parts_search_submit">
+			<?php
+			$button_options = array
+			(
+				'name' => 'Buscar',
+				'label' => __('Search', true),
+				'div' => false
+			);
+			echo $form->end($button_options);
+			?>
+		</div>
+	<div class="clear"></div>
 </div>
 <!--<div class="parts index">-->
 <div class="clear" Style="margin-top:25px"></div>
@@ -129,13 +159,3 @@ echo $html->script('prototype');
  |
 		<?php echo $this->Paginator->next(__('Next', true) . ' >>', array(), null, array('class' => 'disabled'));?>
 	</div>
-<!--<div class="actions">
-	<h3><?php /* __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Planol', true), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Motors', true), array('controller' => 'motors', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Motor', true), array('controller' => 'motors', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Parts', true), array('controller' => 'parts', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Part', true), array('controller' => 'parts', 'action' => 'add')); */ ?> </li>
-	</ul>
-</div>-->
