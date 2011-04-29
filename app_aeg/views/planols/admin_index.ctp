@@ -136,8 +136,8 @@ echo $html->script('prototype');
 		<div class="grid_1 alpha"><?php echo $planol['Planol']['id']; ?>&nbsp;</div>
 		<div class="grid_3"><?php echo $planol['Planol']['codigo']; ?>&nbsp;</div>
 		<div class="grid_4"><?php echo $planol['Planol']['img_digital']; ?>&nbsp;</div>
-		<div class="grid_4"><?php echo $planol['Planol']['ubicacion']; ?>&nbsp;</div>
-		<div class="grid_3 omega actions">
+		<div class="grid_5"><?php echo $planol['Planol']['ubicacion']; ?>&nbsp;</div>
+		<div class="grid_2 omega actions">
 			<?php echo $ajax->link( $html->image( 'icons/picture.png', array( 'alt' => __( 'Show_Plan', true ), 'title' => __( 'Show_Plan', true ) ) ), array( 'controller' => 'planols', 'action' => 'mostrar_planol', $planol['Planol']['id'] ), array( 'escape'=>false, 'update' => 'popUpDiv', 'after' => "popup('popUpDiv')" ) );?>
 			<?php echo $html->link( $html->image( 'icons/upload_3.png', array( 'alt' => __( 'Upload_Image', true ), 'title' => __( 'Upload_Image', true ) ) ) ,array( 'controller' => 'planols', 'action' => 'upload_attachment', $planol['Planol']['id'] ), array('escape'=>false) ); ?>
 			<?php echo $ajax->link( $html->image( 'icons/page_edit_mini.png', array( 'alt' => __( 'Quick_Edit', true ), 'title' => __( 'Qcuik_Edit', true ) ) ), array('action' => 'quick_edit', $planol['Planol']['id'] ), array( 'escape'=>false, 'update' => 'planol_'.$planol['Planol']['id']) ); ?>
