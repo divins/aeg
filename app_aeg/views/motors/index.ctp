@@ -219,7 +219,7 @@ echo $html->script('prototype');
 			<?php
 			if( strpos( $unparsed_order, "Motor.id__asc") !== false ){ $url['unparsed_order'] = str_replace("Motor.id__asc", "Motor.id__desc", $unparsed_order); $class = 'asc'; }
 			else if( strpos( $unparsed_order, "Motor.id__desc") !== false ){$url['unparsed_order'] = str_replace("Motor.id__desc", "Motor.id__asc", $unparsed_order); $class = 'desc'; }
-			else{ $url['unparsed_order'] = $unparsed_order.";Motor.id__asc"; $class = 'asc'; }
+			else{ $url['unparsed_order'] = $unparsed_order.";Motor.id__asc"; $class = ''; }
 			?>
 			<!--<th><?php //echo $html->link(__("ID", true), array('controller'=>'Motors','action'=>'index', $unparsed_order_final, $page  ), array('class' => $class) ); ?></th>-->
 			<th class="motorid_col"><?php echo $html->link(__("ID", true), $url, array('class' => $class) ); ?></th>
@@ -227,56 +227,56 @@ echo $html->script('prototype');
 			<?php
 			if( strpos( $unparsed_order, "Motor.clave_pieza__asc") !== false ){ $url['unparsed_order'] = str_replace("Motor.clave_pieza__asc", "Motor.clave_pieza__desc", $unparsed_order); $class = 'asc'; }
 			else if( strpos( $unparsed_order, "Motor.clave_pieza__desc") !== false ){ $url['unparsed_order'] = str_replace("Motor.clave_pieza__desc", "Motor.clave_pieza__asc", $unparsed_order); $class = 'desc'; }
-			else{ $url['unparsed_order'] = $unparsed_order.";Motor.clave_pieza__asc"; $class = 'asc'; }
+			else{ $url['unparsed_order'] = $unparsed_order.";Motor.clave_pieza__asc"; $class = ''; }
 			?>
 			<th class="piecec_col"><?php echo $html->link(__("Piece_Code", true), $url, array('class' => $class) ); ?></th>
 			
 			<?php
 			if( strpos( $unparsed_order, "Motor.clave_unidad__asc") !== false ){ $url['unparsed_order'] = str_replace("Motor.clave_unidad__asc", "Motor.clave_unidad__desc", $unparsed_order); $class = 'asc'; }
 			else if( strpos( $unparsed_order, "Motor.clave_unidad__desc") !== false ){ $url['unparsed_order'] = str_replace("Motor.clave_unidad__desc", "Motor.clave_unidad__asc", $unparsed_order); $class = 'desc'; }
-			else{ $url['unparsed_order'] = $unparsed_order.";Motor.clave_unidad__asc"; $class = 'asc'; }
+			else{ $url['unparsed_order'] = $unparsed_order.";Motor.clave_unidad__asc"; $class = ''; }
 			?>
 			<th class="unityc_col"><?php echo $html->link(__("Unit_Code", true), $url, array('class' => $class) ); ?></th>
 			
 			<?php
 			if( strpos( $unparsed_order, "Motor.denominacion__asc") !== false ){ $url['unparsed_order'] = str_replace("Motor.denominacion__asc", "Motor.denominacion__desc", $unparsed_order); $class = 'asc'; }
 			else if( strpos( $unparsed_order, "Motor.denominacion__desc") !== false ){ $url['unparsed_order'] = str_replace("Motor.denominacion__desc", "Motor.denominacion__asc", $unparsed_order); $class = 'desc'; }
-			else{ $url['unparsed_order'] = $unparsed_order.";Motor.denominacion__asc"; $class = 'asc'; }
+			else{ $url['unparsed_order'] = $unparsed_order.";Motor.denominacion__asc"; $class = ''; }
 			?>
 			<th class="denomination_col"><?php echo $html->link(__("Denomination", true), $url, array('class' => $class) ); ?></th>
 			
 			<?php
 			if( strpos( $unparsed_order, "Motor.serie_id__asc") !== false ){ $url['unparsed_order'] = str_replace("Motor.serie_id__asc", "Motor.serie_id__desc", $unparsed_order); $class = 'asc'; }
 			else if( strpos( $unparsed_order, "Motor.serie_id__desc") !== false ){ $url['unparsed_order'] = str_replace("Motor.serie_id__desc", "Motor.serie_id__asc", $unparsed_order); $class = 'desc'; }
-			else{ $url['unparsed_order'] = $unparsed_order.";Motor.serie_id__asc"; $class = 'asc'; }
+			else{ $url['unparsed_order'] = $unparsed_order.";Motor.serie_id__asc"; $class = ''; }
 			?>
 			<th class="serie_col"><?php echo $html->link(__("Serie", true), $url, array('class' => $class) ); ?></th>
 			
 			<?php
 			if( strpos( $unparsed_order, "altura__asc") !== false ){ $url['unparsed_order'] = str_replace("altura__asc", "altura__desc", $unparsed_order); $class = 'asc'; }
 			else if( strpos( $unparsed_order, "altura__desc") !== false ){ $url['unparsed_order'] = str_replace("altura__desc", "altura__asc", $unparsed_order); $class = 'desc'; }
-			else{ $url['unparsed_order'] = $unparsed_order.";altura__asc"; $class = 'asc'; }
+			else{ $url['unparsed_order'] = $unparsed_order.";altura__asc"; $class = ''; }
 			?>		
 			<th class="height_col"><?php echo $html->link(__("Height", true), $url, array('class' => $class) ); ?></th>
 			
 			<?php
 			if( strpos( $unparsed_order, "Motor.potencia__asc") !== false ){ $url['unparsed_order'] = str_replace("Motor.potencia__asc", "Motor.potencia__desc", $unparsed_order); $class = 'asc'; }
 			else if( strpos( $unparsed_order, "Motor.potencia__desc") !== false ){ $url['unparsed_order'] = str_replace("Motor.potencia__desc", "Motor.potencia__asc", $unparsed_order); $class = 'desc'; }
-			else{ $url['unparsed_order'] = $unparsed_order.";Motor.potencia__asc"; $class = 'asc'; }
+			else{ $url['unparsed_order'] = $unparsed_order.";Motor.potencia__asc"; $class = ''; }
 			?>
 			<th class="power_col"><?php echo $html->link(__("Power", true), $url, array('class' => $class) ); ?></th>
 			
 			<?php
 			if( strpos( $unparsed_order, "Motor.tension__asc") !== false ){ $url['unparsed_order'] = str_replace("Motor.tension__asc", "Motor.tension__desc", $unparsed_order); $class = 'asc'; }
 			else if( strpos( $unparsed_order, "Motor.tension__desc") !== false ){ $url['unparsed_order'] = str_replace("Motor.tension__desc", "Motor.tension__asc", $unparsed_order); $class = 'desc'; }
-			else{ $url['unparsed_order'] = $unparsed_order.";Motor.tension__asc"; $class = 'asc'; }
+			else{ $url['unparsed_order'] = $unparsed_order.";Motor.tension__asc"; $class = ''; }
 			?>
 			<th class="voltage_col"><?php echo $html->link(__("Voltage", true), $url, array('class' => $class) ); ?></th>
 			
 			<?php
 			if( strpos( $unparsed_order, "Motor.forma__asc") !== false ){ $url['unparsed_order'] = str_replace("Motor.forma__asc", "Motor.forma__desc", $unparsed_order); $class = 'asc'; }
 			else if( strpos( $unparsed_order, "Motor.forma__desc") !== false ){ $url['unparsed_order'] = str_replace("Motor.forma__desc", "Motor.forma__asc", $unparsed_order); $class = 'desc'; }
-			else{ $url['unparsed_order'] = $unparsed_order.";Motor.forma__asc"; $class = 'asc'; }
+			else{ $url['unparsed_order'] = $unparsed_order.";Motor.forma__asc"; $class = ''; }
 			?>
 			<th class="shape_col"><?php echo $html->link(__("Shape", true), $url, array('class' => $class) ); ?></th>
 			
