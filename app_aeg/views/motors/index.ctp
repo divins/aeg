@@ -358,7 +358,7 @@ echo $html->script('prototype');
 		<td class="piecec_col"><?php echo $motor['Motor']['clave_pieza']; ?>&nbsp;</td>
 		<td class="unityc_col"><?php echo $motor['Motor']['clave_unidad']; ?>&nbsp;</td>
 		<td class="denomination_col"><?php echo $motor['Motor']['denominacion']; ?>&nbsp;</td>
-		<td class="serie_col"><?php echo $this->Html->link($motor['Serie']['codigo'], array('controller' => 'series', 'action' => 'view', $motor['Serie']['id'])); ?></td>
+		<td class="serie_col"><?php echo $motor['Serie']['codigo']; ?></td>
 		<td class="height_col"><?php echo $motor['Motor']['altura']; ?>&nbsp;</td>
 		<td class="power_col"><?php echo $motor['Motor']['potencia']; ?>&nbsp;</td>
 		<td class="voltage_col"><?php echo $motor['Motor']['tension']; ?>&nbsp;</td>
@@ -367,16 +367,4 @@ echo $html->script('prototype');
 	</tr>
 <?php endforeach; ?>
 	</table>
-	<div class="grid_9 alpha paging_count">
-	<?php
-	echo $this->Paginator->counter(array(
-	'format' => __('Pagination_info_for_motor_searching', true)
-	));
-	?>
-	</div>
-	<div class="grid_7 omega paging_nav">
-		<?php echo $this->Paginator->prev('<< ' . __('Previous', true), array(), null, array('class'=>'disabled'));?>
-		| <?php echo $this->Paginator->numbers();?> 
-		| <?php echo $this->Paginator->next( __('Next', true) . ' >>', array(), null, array('class' => 'disabled'));?>
-	</div>	
 </div>

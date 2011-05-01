@@ -378,9 +378,9 @@ echo $html->script('prototype');
 	</div>
 <?php endforeach; ?>
 	</div>
-	<div class="clear"></div>
+	<!--<div class="clear"></div>
 	<div class="grid_10 alpha paging_count">
-	<?php
+	<?php/*
 	echo $this->Paginator->counter(array(
 	'format' => __('Pagination_info_for_motor_searching', true)
 	));
@@ -389,6 +389,6 @@ echo $html->script('prototype');
 	<div class="grid_6 omega paging_nav">
 		<?php echo $this->Paginator->prev('<< ' . __('Previous', true), array(), null, array('class'=>'disabled'));?>
 		| <?php echo $this->Paginator->numbers();?> 
-		| <?php echo $this->Paginator->next( __('Next', true) . ' >>', array(), null, array('class' => 'disabled'));?>
-	</div>	
+		| <?php echo $this->Paginator->next( __('Next', true) . ' >>', array(), null, array('class' => 'disabled'));*/?>
+	</div>	-->
 </div>

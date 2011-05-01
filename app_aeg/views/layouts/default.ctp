@@ -36,13 +36,16 @@
 <body>
 <div id="blanket" style="display:none;"></div> 
 <div id="popUpDiv" class="container_16" style="display:none;"></div>	
-<div id="header" class="container_16">
-		<div id="header_title" class="grid_2">
-			<?php echo $this->Html->link( $this->Html->image( "aeg_patrocinadors/logo_aeg.png", array( "alt" =>"Fons AEG", "title" => "Fons AEG")), array( "controller" => "motors", "action" => "index"  ), array('escape'=>false) ); ?>			
+<div id="header_big" class="container_16">
+		<div id="header_title_big">
+			AEG			
 		</div>
-		<div id="menu" class="grid_14">
+		<div id="header_subtitle_big">
+			<span><?php echo utf8_encode("Fons historic d'AEG Electric Motors S.A."); ?></span>
+		</div>
+		<div id="menu_big">
 			<ul>
-				<li><?php echo $this->Html->link( __("Presentation", true), array( "controller" => "pages", "action" => "home") ); ?> </a></li>
+				<li><?php echo $this->Html->link(__("Presentation", true), array( "controller" => "pages", "action" => "home") ); ?> </a></li>
 				<li><?php echo $this->Html->link( __("AEG_History", true), array( "controller" => "pages", "action" => "historia") ); ?> </a></li>
 				<li><?php echo $this->Html->link( __("Bibliografy", true), array( "controller" => "pages", "action" => "coleccio_bibliografica") ); ?> </a></li>
 				<li><?php echo $this->Html->link( __("Technical_Data", true), array( "controller" => "motors", "action" => "index") ); ?> </a></li>
@@ -60,12 +63,17 @@
 </div>
 <div class="clear"></div>
 <div id="footer" class="container_16">
-    <div class="grid_16">
-		<?php echo $this->Html->link( $this->Html->image( "aeg_patrocinadors/ajterrassa_footer.png", array( "alt" =>"Ajuntament de Terrassa", "title" => "Ajuntament de Terrassa")), "http://www.terrassa.cat/", array( 'target'=>'_blank', 'escape'=>false) ); ?>			
+	<ul>
+		<?php /*echo $this->Html->link( $this->Html->image( "aeg_patrocinadors/ajterrassa_footer.png", array( "alt" =>"Ajuntament de Terrassa", "title" => "Ajuntament de Terrassa")), "http://www.terrassa.cat/", array( 'target'=>'_blank', 'escape'=>false) ); ?>			
 		<?php echo $this->Html->link( $this->Html->image( "aeg_patrocinadors/logo_aeg_footer.png", array( "alt" =>"AEG", "title" => "AEG")), "http://www.aeg.com/", array( 'target'=>'_blank', 'escape'=>false) ); ?>			
 		<?php echo $this->Html->link( $this->Html->image( "aeg_patrocinadors/euetit_footer.png", array( "alt" =>"Escola d'Eginyeria de Terrassa", "title" => "Escola d'Eginyeria de Terrassa")), "http://www.eet.upc.edu", array( 'target'=>'_blank', 'escape'=>false) ); ?>	
 		<?php echo $this->Html->link( $this->Html->image( "aeg_patrocinadors/bct_footer.png", array( "alt" =>"Biblioteca Campus Terrassa", "title" => "Biblioteca Campus Terrassa")), "http://bibliotecnica.upc.edu/BCT/", array( 'target'=>'_blank', 'escape'=>false) ); ?>						
-    </div>
+		<?php */ ?>
+		<li> <?php echo $this->Html->link( "Ajuntament de Terrassa", "http://www.terrassa.cat/", array( 'target'=>'_blank', 'escape'=>false) ); ?>			
+		<li> <?php echo $this->Html->link( "AEG", "http://www.aeg.com/", array( 'target'=>'_blank', 'escape'=>false) ); ?>			
+		<li> <?php echo $this->Html->link( "Escola d'Enginyeria de Terrassa", "http://www.eet.upc.edu", array( 'target'=>'_blank', 'escape'=>false) ); ?>	
+		<li> <?php echo $this->Html->link( "Biblioteca Campus Terrassa", "http://bibliotecnica.upc.edu/BCT/", array( 'target'=>'_blank', 'escape'=>false) ); ?>						
+	</ul>
 </div>	
 <?php echo $this->element('sql_dump'); ?>
 </body>
