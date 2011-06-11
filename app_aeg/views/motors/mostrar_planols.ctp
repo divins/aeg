@@ -1,3 +1,6 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
 <div Style="text-align:center">
 	<div Style="float:left; width:90%; text-align:center; margin-top:12px; font-weight:bold;">
 		<?php echo $planols["Motor"]["denominacion"]; ?>
@@ -16,7 +19,7 @@
 	?>
 		<div Style="width:120px; height:105px; text-align:center; float:left;">
 		<?php
-		echo $this->Html->link( $this->Html->image("planols/".$planol["img_digital"], array( "width" => "110", "height" => "80", "alt" => $planol["codigo"], "title" => $planol["codigo"])), "", array('escape'=>false) );
+		echo $this->Html->link( $this->Html->image("planols/".$planol["id"].".jpg", array( "width" => "110", "height" => "80", "alt" => $planol["codigo"], "title" => $planol["codigo"])), "", array('escape'=>false) );
 		?>
 		<br>
 		<?php echo utf8_encode($planol["codigo"]); ?>
@@ -25,16 +28,24 @@
 	}
 	?>
 	</div>
-	<div id="big_image">
-		<div Style="width:100%; text-align:center; margin-top:12px; font-weight:bold;">
-			<?php 
-				echo __('Plan',true).": ".$planols["Planol"][0]["codigo"]." [".__('Location',true)." - ".$planols["Planol"][0]["ubicacion"]."]"; 
-				echo "&nbsp;&nbsp;&nbsp;".$this->Html->link( $this->Html->image("download.jpg", array( "width" => "24", "height" => "24", "alt" => __( "Download", true ), "title" => __( "Download", true ))), "/img/".$planols["Planol"][0]["img_digital"], array('escape'=>false,'target'=>'_blank') );
-			?>
-		</div>
 	<?php
-		//echo $this->Html->image("planols/".$planols["Planol"][0]["img_digital"].".jpg", array( "width" => "100%", "height" => "100%", "alt" => $planols["Planol"][0]["codigo"], "title" => $planols["Planol"][0]["codigo"]));
-		echo $this->Html->image("planols/".$planols["Planol"][0]["img_digital"], array( "width" => "100%", "height" => "100%", "alt" => $planols["Planol"][0]["codigo"], "title" => $planols["Planol"][0]["codigo"]));
+	$class = "visible";
+	foreach( $planols['Planol'] as $planol)
+	{?>
+		<div id="big_image" Style="visibility: <?php echo $class; ?>">
+			<div Style="width:100%; text-align:center; margin-top:12px; font-weight:bold;">
+				<?php 
+					echo __('Plan',true).": ".$planol["codigo"]." [".__('Location',true)." - ".$planol["ubicacion"]."]"; 
+					echo "&nbsp;&nbsp;&nbsp;".$this->Html->link( $this->Html->image("download.jpg", array( "width" => "24", "height" => "24", "alt" => __( "Download", true ), "title" => __( "Download", true ))), "/img/planols/".$planol["id"].".jpg", array('escape'=>false,'target'=>'_blank', 'onclick'=>'alert("hey");') );
+				?>
+			</div>
+		<?php
+			//echo $this->Html->image("planols/".$planols["Planol"][0]["img_digital"].".jpg", array( "width" => "100%", "height" => "100%", "alt" => $planols["Planol"][0]["codigo"], "title" => $planols["Planol"][0]["codigo"]));
+			echo $this->Html->image("planols/".$planol["id"].".jpg", array( "width" => "100%", "height" => "100%", "alt" => $planol["codigo"], "title" => $planol["codigo"]));
+		?>
+		</div>
+	<?php 
+		$class = "hidden";
+	} 
 	?>
-	</div>
 </div>

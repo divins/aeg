@@ -67,24 +67,21 @@ echo $html->script('prototype');
 		</div>
 	<div class="clear"></div>
 </div>
-<!--<div class="parts index">-->
-<div class="clear" Style="margin-top:25px"></div>
 <?php
 	//DEBUG( $conditions );
 	if( isset($unparsed_order) ){ $this->Paginator->options(array('url' => 'unparsed_order:'.$unparsed_order )); }
 	else{ $this->Paginator->options(array('url' => $conditions )); }
 ?>
-
-	<h2><?php __('Planols');?></h2>
-	
-	<div class="grid_9">
+<div id="resultat" class="grid_16" style="margin-top: 15px;">
+	<h2><?php __('Planols');?></h2>	
+	<div class="grid_9 alpha">
 	<?php
 	echo $this->Paginator->counter(array(
 	'format' => __('Pagination_info_for_plans_searching', true)
 	));
 	?>
 	</div>
-	<div class="grid_7">
+	<div class="grid_7 omega">
 		<?php 
 		//DEBUG($url);
 		$url['action']='index';
@@ -128,9 +125,9 @@ echo $html->script('prototype');
 	<?php
 	$i = 0;
 	foreach ($planols as $planol):
-			$class = ' style="background-color:#fff;"';
+			$class = ' style="background-color:#fff; margin-left:0px"';
 			if ($i++ % 2 == 0) {
-				$class = ' style="background-color:#bbb;"';
+				$class = ' style="background-color:#bbb; margin-left:0px"';
 			}
 	?>
 	<div class="grid_16" <?php echo "id='planol_".$planol['Planol']['id']."' ".$class; ?>>
@@ -138,7 +135,7 @@ echo $html->script('prototype');
 		<div class="grid_3"><?php echo $planol['Planol']['codigo']; ?>&nbsp;</div>
 		<div class="grid_4"><?php echo $planol['Planol']['img_digital']; ?>&nbsp;</div>
 		<div class="grid_5"><?php echo $planol['Planol']['ubicacion']; ?>&nbsp;</div>
-		<div class="grid_2 omega actions">
+		<div class="grid_2 omega">
 			<?php echo $ajax->link( $html->image( 'icons/picture.png', array( 'alt' => __( 'Show_Plan', true ), 'title' => __( 'Show_Plan', true ) ) ), array( 'controller' => 'planols', 'action' => 'mostrar_planol', $planol['Planol']['id'] ), array( 'escape'=>false, 'update' => 'popUpDiv', 'after' => "popup('popUpDiv')" ) );?>
 			<?php echo $html->link( $html->image( 'icons/upload_3.png', array( 'alt' => __( 'Upload_Image', true ), 'title' => __( 'Upload_Image', true ) ) ) ,array( 'controller' => 'planols', 'action' => 'upload_attachment', $planol['Planol']['id'] ), array('escape'=>false) ); ?>
 			<?php echo $ajax->link( $html->image( 'icons/page_edit_mini.png', array( 'alt' => __( 'Quick_Edit', true ), 'title' => __( 'Qcuik_Edit', true ) ) ), array('action' => 'quick_edit', $planol['Planol']['id'] ), array( 'escape'=>false, 'update' => 'planol_'.$planol['Planol']['id']) ); ?>
@@ -147,16 +144,4 @@ echo $html->script('prototype');
 	</div>
 	<div class="clear"></div>
 <?php endforeach; ?>
-	<p>
-	<?php
-	echo $this->Paginator->counter(array(
-	'format' => __('Pagination_info_for_plans_searching', true)
-	));
-	?>	</p>
-
-	<div class="paging">
-		<?php echo $this->Paginator->prev('<< ' . __('Previous', true), array(), null, array('class'=>'disabled'));?>
-	 | 	<?php echo $this->Paginator->numbers();?>
- |
-		<?php echo $this->Paginator->next(__('Next', true) . ' >>', array(), null, array('class' => 'disabled'));?>
-	</div>
+</div>

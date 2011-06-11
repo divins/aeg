@@ -146,7 +146,7 @@ position:absolute;
 background-color:#eeeeee;
 height:600px;
 z-index: 9002;
-overflow:auto;
+/*overflow:auto;*/
 }
 #blanket {
 background-color:#111;
@@ -172,6 +172,7 @@ body{
 	font-family: "Arial",  "verdana", Helvetica, sans-serif; 
 	font-size: 10pt;
     font-style: normal;
+	overflow:auto;
 }
 
 /* Links */
@@ -377,10 +378,12 @@ form {
 #motors_result_list div{
 	float:left;
 	border:0px;
+	height: 20px;
 }
 #motors_result_row div{
 	float:none;
 	clear:both;
+	height: 16px;
 }
 #planols_list div{
 	float:left;
@@ -408,7 +411,6 @@ form {
 	margin-top:20px;
 }
 #plans form { 
-	background-color:#DDDDDD; 
 	padding-top:15px; 
 	padding-bottom:15px; 
 	padding-left:10px; 
@@ -459,7 +461,26 @@ form {
 	width:90%;
 }*/
 
+#PartIndexForm,
+#SeriesAdminQuickEditForm,
+#PlanolIndexForm,
+#PlanolAdminQuickEditForm
+{
+padding: 0px;
+overflow:hidden;
+margin: 0px;
+}
 
+
+.motor_result_row form{
+padding: 0px;
+overflow:hidden;
+margin-bottom: 5px; 
+}
+.motor_result_row{
+margin-bottom: 2px; 
+margin-top: 2px; 
+}
 /**********************/
 /* Part Search Engine */
 /**********************/
@@ -470,6 +491,10 @@ form {
 .motors_result_row div{
 	float:none;
 	clear:both;
+}
+.parts_result_row form{
+padding: 0px;
+overflow:hidden;
 }
 #buscador_parts { margin-top:20px; }
 /*#buscador_parts input[type=submit] {  font-weight:bold; margin-top:0px; }*/
@@ -545,6 +570,12 @@ form {
 .parts_result_row {
 	float:none;
 	clear:both;
+	margin-bottom: 2px; 
+	margin-top: 2px; 
+	height: 16px;
+}
+.parts_result_row div{
+	height: 17px;
 }
 .component_son {
 	margin-left:15px;
